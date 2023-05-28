@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30A158152A22979000A62170 /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A158142A22979000A62170 /* TicTacToeApp.swift */; };
-		30A158172A22979000A62170 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A158162A22979000A62170 /* ContentView.swift */; };
+		30A158152A22979000A62170 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A158142A22979000A62170 /* AppEntry.swift */; };
+		30A158172A22979000A62170 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A158162A22979000A62170 /* StartView.swift */; };
 		30A158192A22979200A62170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A158182A22979200A62170 /* Assets.xcassets */; };
 		30A1581C2A22979200A62170 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A1581B2A22979200A62170 /* Preview Assets.xcassets */; };
+		30A158232A22BD1300A62170 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A158222A22BD1300A62170 /* Launch Screen.storyboard */; };
+		30A158262A22C9B600A62170 /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A158252A22C9B600A62170 /* GameModels.swift */; };
+		30A158292A22E3BA00A62170 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A158282A22E3BA00A62170 /* ViewModifiers.swift */; };
+		30A1582C2A22E76D00A62170 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A1582B2A22E76D00A62170 /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30A158112A22979000A62170 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		30A158142A22979000A62170 /* TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
-		30A158162A22979000A62170 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30A158142A22979000A62170 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
+		30A158162A22979000A62170 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		30A158182A22979200A62170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30A1581B2A22979200A62170 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30A158222A22BD1300A62170 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		30A158252A22C9B600A62170 /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		30A158282A22E3BA00A62170 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		30A1582B2A22E76D00A62170 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +59,13 @@
 		30A158132A22979000A62170 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
-				30A158142A22979000A62170 /* TicTacToeApp.swift */,
-				30A158162A22979000A62170 /* ContentView.swift */,
+				30A1582A2A22E75200A62170 /* GameScreen */,
+				30A158272A22E38600A62170 /* Utilities */,
+				30A158242A22C99E00A62170 /* Models */,
+				30A158142A22979000A62170 /* AppEntry.swift */,
+				30A158162A22979000A62170 /* StartView.swift */,
 				30A158182A22979200A62170 /* Assets.xcassets */,
+				30A158222A22BD1300A62170 /* Launch Screen.storyboard */,
 				30A1581A2A22979200A62170 /* Preview Content */,
 			);
 			path = TicTacToe;
@@ -65,6 +77,30 @@
 				30A1581B2A22979200A62170 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30A158242A22C99E00A62170 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30A158252A22C9B600A62170 /* GameModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30A158272A22E38600A62170 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				30A158282A22E3BA00A62170 /* ViewModifiers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		30A1582A2A22E75200A62170 /* GameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				30A1582B2A22E76D00A62170 /* GameView.swift */,
+			);
+			path = GameScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A158232A22BD1300A62170 /* Launch Screen.storyboard in Resources */,
 				30A1581C2A22979200A62170 /* Preview Assets.xcassets in Resources */,
 				30A158192A22979200A62170 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30A158172A22979000A62170 /* ContentView.swift in Sources */,
-				30A158152A22979000A62170 /* TicTacToeApp.swift in Sources */,
+				30A158172A22979000A62170 /* StartView.swift in Sources */,
+				30A158262A22C9B600A62170 /* GameModels.swift in Sources */,
+				30A158152A22979000A62170 /* AppEntry.swift in Sources */,
+				30A158292A22E3BA00A62170 /* ViewModifiers.swift in Sources */,
+				30A1582C2A22E76D00A62170 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -272,8 +312,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,8 +342,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

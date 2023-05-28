@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
+                                <rect key="frame" x="0.0" y="832" width="400" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
+                                <rect key="frame" x="0.0" y="252" width="400" height="66"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="LI6-YG-3b5">
+                                <rect key="frame" x="100" y="326" width="200" height="200"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LI6-YG-3b5" secondAttribute="height" multiplier="1:1" id="AH6-vA-Ano"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Ewy-ne-YrR"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Xed-Ui-MCN"/>
+                                    <constraint firstAttribute="height" constant="200" id="hxr-in-xId"/>
+                                    <constraint firstAttribute="width" constant="200" id="rbL-aH-F4Z"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3zn-lx-nvL"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4Zi-NR-zZp"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6TX-cO-MFw"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DIC-jW-8uN"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Hn3-og-b1A"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LpP-W8-EZx"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="Q3B-4B-g5h"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Tav-Mh-BgA"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UlH-Vw-aeh"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="top" secondItem="GJd-Yh-RWb" secondAttribute="bottom" constant="8" symbolic="YES" id="XmD-8L-3lY"/>
+                            <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="b6l-Hi-rza"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dw9-Nr-r2d"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="100" id="jxw-tK-1J7"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="1/3" constant="1" id="moa-c2-u7t"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="oGF-3p-SLb"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="pXj-hl-kqh"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tor-09-qjK"/>
+                            <constraint firstItem="LI6-YG-3b5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uyC-Kn-YIL"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="x7j-FC-K8j"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreen" width="1067" height="1067"/>
+    </resources>
+</document>
