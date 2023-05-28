@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct GameView: View {
+    //calling dismiss as a function will result this view to be dismissed
     @Environment(\.dismiss) var dismiss
+  
     var body: some View {
         VStack {
             Text("Hello, World!")
@@ -16,7 +18,7 @@ struct GameView: View {
         .toolbar{
             ToolbarItem(placement: .navigationBarTrailing){
                 Button("End game"){
-                    dismiss()
+                   dismiss()
                 }
                 .buttonStyle(.bordered)
             }
