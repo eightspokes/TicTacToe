@@ -21,6 +21,7 @@ struct StartView: View {
                 Text("Two Sharing device").tag(GameType.single)
                 Text("Challenge your device").tag(GameType.bot)
                 Text("Challenge a friend").tag(GameType.peer)
+              
             }
             .padding()
             .background(RoundedRectangle(cornerRadius: 10, style: .continuous).stroke(lineWidth: 2))
@@ -59,7 +60,7 @@ struct StartView: View {
                 .disabled(
                     gameType == .undetermined ||
                     gameType == .bot && yourName.isEmpty ||
-                    gameType == .single && yourName.isEmpty || opponentName.isEmpty
+                    gameType == .single && yourName.isEmpty  //opponentName.isEmpty
                 )
                 
                 Image("LaunchScreen")
