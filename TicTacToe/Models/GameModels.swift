@@ -19,7 +19,6 @@ enum GameType{
         case .undetermined:
             return "" 
         }
-            
     }
 }
 
