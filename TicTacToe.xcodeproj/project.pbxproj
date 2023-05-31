@@ -18,6 +18,7 @@
 		30A1582E2A23910100A62170 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A1582D2A23910100A62170 /* GameService.swift */; };
 		30A158302A23E86600A62170 /* GameSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A1582F2A23E86600A62170 /* GameSquare.swift */; };
 		30A158322A23EE6E00A62170 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A158312A23EE6E00A62170 /* SquareView.swift */; };
+		30DC8B352A278E6A007EA41E /* YourNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC8B342A278E6A007EA41E /* YourNameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		30A1582D2A23910100A62170 /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
 		30A1582F2A23E86600A62170 /* GameSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquare.swift; sourceTree = "<group>"; };
 		30A158312A23EE6E00A62170 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
+		30DC8B342A278E6A007EA41E /* YourNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourNameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				30A158312A23EE6E00A62170 /* SquareView.swift */,
 				30A1582F2A23E86600A62170 /* GameSquare.swift */,
 				30A1582D2A23910100A62170 /* GameService.swift */,
+				30DC8B342A278E6A007EA41E /* YourNameView.swift */,
 			);
 			path = GameScreen;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30DC8B352A278E6A007EA41E /* YourNameView.swift in Sources */,
 				30A158172A22979000A62170 /* StartView.swift in Sources */,
 				30A158262A22C9B600A62170 /* GameModels.swift in Sources */,
 				30A158152A22979000A62170 /* AppEntry.swift in Sources */,
